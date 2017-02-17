@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+  <style>
+    #dishi{
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" id="city">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+  <ul class="dropdown-menu " aria-labelledby="dropdownMenu1" id="dishi">
+    <li><a href="#">caaaaaaaaaaaa</a></li>
+    <li><a href="#">aaaaaaaaaa</a></li>
+    <li><a href="#">Saaaaae</a></li>
+    <li><a href="#">Saaa</a></li>
+  </ul>
+</div>
+  <script src="../lib/jquery-1.11.1.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.js"></script>
+  <script>
+    function showcity(){
+      var oCity=$("#city").querySelectorAll("li");
+      var oDish=$("#dishi").querySelectorAll("li");
+      var len=oCity.length();
+      for(var i=0;i<len;i++){
+        oCity[i].onclick=function(){
+          $("#city").visibility='hidden';
+
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>

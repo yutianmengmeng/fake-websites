@@ -1,0 +1,439 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: Microsoft YaHei;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+ul,li{
+  margin:0;
+  padding:0;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+.container{
+  width: 1200px;
+  margin:0 auto;
+  padding:0;
+}
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+
+/* body */
+
+body {
+    font-size: 12px;
+}
+
+a {
+    color: #666;
+}
+
+
+/* header-css */
+
+header {}
+
+.topbar {
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    background: #f6f6f6;
+    border-bottom: 1px solid #ececec;
+}
+
+.topbar ul li {
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+    margin: 0;
+    box-sizing: border-box;
+}
+.topbar ul li+li {
+    /*border-left: 1px solid #ececec;*/
+}
+
+.topbar ul li.login a {
+    color: #e40077;
+}
+
+.topbar ul li a:hover {
+    color: #337ab7;
+}
+
+.topbar ul li.login:hover {
+    background-color: #fff;
+}
+
+.topbar ul li.app-wx:hover {
+    background-color: #fff;
+}
+
+.topbar ul li:hover> .dropdown-menu {
+    display: block;
+}
+
+.topbar ul li .dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    border: 0;
+    background: #fff;
+    padding: 18px 0 12px 0;
+    z-index: 1111;
+    text-align: center;
+}
+
+.topbar .dropdown-menu .submenu {
+    display: block;
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #e4e4e4;
+    margin: 5px 15px;
+    color: #25b2fe;
+    text-align: center;
+    text-decoration: none;
+}
+
+.topbar .dropdown-menu .submenu:hover {
+    color: #fff;
+    background-color: #25b2fe;
+    text-decoration: none;
+}
+
+
+/*顶部结束，logo区域开始*/
+
+.headcon {
+    padding: 15px 50px 15px 0;
+}
+
+#city {
+    display: inline-block;
+}
+
+#city button {
+    border: 0;
+}
+
+#city button:hover,
+#city button:focus {
+    background-color: #fff;
+}
+
+#select_city {
+    padding: 10px;
+    border: 0;
+    width: 520px;
+}
+
+#select_city >li {
+    display: block;
+    border-left: 0;
+}
+
+.city_list dt,
+dd {
+    display: inline-block;
+    margin: 8px;
+}
+
+.city_list dt {
+    position: relative;
+}
+
+.stripe {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 3px;
+    height: 16px;
+    background-color: pink;
+}
+
+.search_ipt {
+    border: 2px solid #ccc;
+    border-radius: 0;
+}
+
+a.tag {
+    display: inline-block;
+    margin: 5px 10px;
+    height: 20px;
+    line-height: 20px;
+}
+
+a.hot_tag {
+    color: #e40077;
+}
+
+
+/*页面底部*/
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    margin: 15px auto;
+}
+
+footer p a {
+    box-sizing: border-box;
+    color: #333;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+p.footer-links a+a {
+    border-left: 1px solid #333;
+}
+
+footer p>span {
+    display: inline-block;
+    padding: 5px;
+}
+
+
+/*主体内容部分*/
+
+main {
+    position: relative;
+    height: 1000px;
+}
+
+.nav-menu{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-flow:row nowrap;
+  justify-content: space-between;
+}
+
+.nav-menu >li {
+  width: 260px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  position: relative;
+}
+.nav-menu >li+li{
+  border-left: 1px solid #fff;
+}
+.nav-menu > li:first-child {
+   height: 38px;
+   line-height: 38px;
+    width: 160px;
+}
+
+.nav-menu > li > a {
+  width: 100%;
+    padding: 0;
+    color: #666;
+    font-size: 16px;
+    background-color: #dcdcdc;
+}
+
+.nav-menu > li > a:hover {
+    color: #0085d0;
+    background-color: #f3f3f3;
+}
+
+.nav-menu>li.active {
+    color: #0085d0;
+    border-top: 2px solid #0085d0;
+}
+
+.nav-menu > li.active > a,
+.nav-menu > li.active > a:hover,
+.nav-menu> li.active > a:focus {
+    color: #337ab7;
+    font-weight: bold;
+}
+
+ins {
+    display:none;
+    left: 50%;
+    bottom:0;
+    margin-left: -7px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 8px solid #fff;
+    position: absolute;
+}
+.nav-menu > li:hover> ins{
+  display: block;
+}
+
+.nav-submenu{
+  width:1200px;
+  display: flex;
+  flex-flow:row nowrap;
+  justify-content: space-between;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 1px 1px #888;
+  visibility: hidden;
+}
+.nav-submenu>li{
+  width: 14%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+}
+.nav-submenu>li>a{
+  text-decoration: none;
+}
+.nav-submenu>li>a:hover{
+  color: #0085d0;
+}
