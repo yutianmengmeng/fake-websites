@@ -5,158 +5,164 @@
   <title>Title</title>
   <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
 </head>
-<!--<style>-->
-  <!--div,ul,li{-->
-    <!--box-sizing: border-box;-->
-  <!--}-->
-  <!--.clearfix::before,.clearfix::after{-->
-    <!--content: '';-->
-    <!--display: table;-->
-  <!--}-->
-  <!--.clearfix::after{-->
-    <!--clear:both;-->
-  <!--}-->
-  <!--.clearfix{-->
-    <!--zoom:1;-->
-  <!--}-->
-  <!--ul,li{-->
-    <!--list-style-type:none;-->
-    <!--margin:0;-->
-    <!--padding:0;-->
-  <!--}-->
-  <!--li{-->
-    <!--display: inline-block;-->
-    <!--float:left;-->
-  <!--}-->
- <!--.topmenu{-->
-   <!--background-color: pink;-->
- <!--}-->
-  <!--.toplist{-->
-    <!--height: 40px;-->
-    <!--line-height: 40px;-->
-    <!--width:80px;-->
-    <!--text-align:center;-->
-    <!--/*border:1px solid red;*/-->
-    <!--box-sizing: border-box;-->
-    <!--position: relative;-->
-  <!--}-->
-  <!--.submenu{-->
-    <!--position: absolute;-->
-    <!--width:500%;-->
-    <!--display: none;-->
-    <!--background-color: #888;-->
-  <!--}-->
-  <!--.sublist{-->
-    <!--width:20%;-->
-    <!--height:30px;-->
-    <!--line-height:30px;-->
-    <!--text-align:center;-->
-    <!--border:1px solid green;-->
-  <!--}-->
-  <!--.toplist:hover > .submenu{-->
-    <!--display: block;-->
-  <!--}-->
-  <!--ins {-->
-    <!--left: 50%;-->
-    <!--bottom: 0px;-->
-    <!--margin-left: -7px;-->
-    <!--width: 0;-->
-    <!--height: 0;-->
-    <!--border-left: 7px solid transparent;-->
-    <!--border-right: 7px solid transparent;-->
-    <!--border-bottom: 8px solid #fff;-->
-    <!--position: absolute;-->
-  <!--}-->
-<!--</style>-->
+<style>
+  .clearfix::before,.clear::after{
+    content:'';
+    display: table;
+  }
+  .clearfix::after{
+    clear:both;
+  }
+  .clearfix{
+    zoom:1;
+  }
+  div,ul,li{
+    box-sizing: border-box;
+  }
+  .clearfix::before,.clearfix::after{
+    content: '';
+    display: table;
+  }
+  .clearfix::after{
+    clear:both;
+  }
+  .clearfix{
+    zoom:1;
+  }
+  ul,li{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+  }
+  li{
+    display: inline-block;
+    float:left;
+  }
+ .topmenu{
+   background-color: pink;
+   position:relative;
+ }
+  .toplist{
+    height: 40px;
+    line-height: 40px;
+    width:80px;
+    text-align:center;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .submenu{
+    position: absolute;
+    left:0;
+    bottom:-30px;
+    width:500%;
+    display: none;
+    background-color: #888;
+  }
+  .sublist{
+    width:20%;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+    border:1px solid green;
+  }
+  /* .toplist:hover > .submenu{
+    display: block;
+  } */
+  ins{
+    left: 50%;
+    bottom: 0px;
+    margin-left: -7px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 8px solid #fff;
+    position: absolute;
+    display: none;
+  }
+</style>
 <body>
-<!--<div class="container">-->
-  <!--<ul class="topmenu clearfix">-->
-    <!--<li class="toplist dropdown">-->
-      <!--首页-->
-      <!--<ins></ins>-->
-      <!--<ul class="submenu dropdown-menu">-->
-        <!--<li class="sublist">苹果</li>-->
-        <!--<li class="sublist">西红柿</li>-->
-        <!--<li class="sublist">草莓</li>-->
-        <!--<li class="sublist">火龙果</li>-->
-        <!--<li class="sublist">桃子</li>-->
-      <!--</ul>-->
-    <!--</li>-->
-    <!--<li class="toplist">-->
-      <!--新闻-->
-      <!--<ins></ins>-->
-      <!--<ul class="submenu">-->
-        <!--<li class="sublist">苹果</li>-->
-        <!--<li class="sublist">香蕉</li>-->
-        <!--<li class="sublist">桔子</li>-->
-        <!--<li class="sublist">苹果</li>-->
-        <!--<li class="sublist">香蕉</li>-->
+<div class="container">
+  <ul class="topmenu clearfix" id="menutop">
+    <li class="toplist">
+      首页
+      <ins></ins>
+      <ul class="submenu">
+        <li class="sublist">苹果</li>
+        <li class="sublist">西红柿</li>
+        <li class="sublist">草莓</li>
+        <li class="sublist">火龙果</li>
+        <li class="sublist">桃子</li>
+      </ul>
+    </li>
+    <li class="toplist">
+      新闻
+      <ins></ins>
+      <ul class="submenu">
+        <li class="sublist">苹果</li>
+        <li class="sublist">香蕉</li>
+        <li class="sublist">桔子</li>
+        <li class="sublist">苹果</li>
+        <li class="sublist">香蕉</li>
 
-      <!--</ul>-->
-    <!--</li>-->
-    <!--<li class="toplist">-->
-      <!--关注-->
-      <!--<ins></ins>-->
-      <!--<ul class="submenu">-->
-        <!--<li class="sublist">苹果</li>-->
-        <!--<li class="sublist">绿色</li></li>-->
-        <!--<li class="sublist">红色</li>-->
-        <!--<li class="sublist">青色</li>-->
-        <!--<li class="sublist">粉红</li>-->
-      <!--</ul>-->
-    <!--</li>-->
-    <!--<li class="toplist">-->
-      <!--我的空间-->
-      <!--<ins></ins>-->
-      <!--<ul class="submenu">-->
-        <!--<li class="sublist">苹果</li>-->
-        <!--<li class="sublist">手机</li>-->
-        <!--<li class="sublist">耳机</li>-->
-        <!--<li class="sublist">电脑</li>-->
-        <!--<li class="sublist">平板</li>-->
-      <!--</ul>-->
-    <!--</li>-->
-    <!--<li class="toplist">-->
-      <!--今日头条-->
-      <!--<ins></ins>-->
-      <!--<ul class="submenu">-->
-        <!--<li class="sublist">苹果</li>-->
-        <!--<li class="sublist">小米</li>-->
-        <!--<li class="sublist">华为</li>-->
-        <!--<li class="sublist">魅族</li>-->
-        <!--<li class="sublist">三星</li>-->
-      <!--</ul>-->
-    <!--</li>-->
-  <!--</ul>-->
-<!--</div>-->
-<hr>
-<hr>
-<div class="dropdown">
-  <span class="dropdown-toggle" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Dropdown
-    <i class="caret"></i>
-  </span>
-  <ul class="dropdown-menu">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
+      </ul>
+    </li>
+    <li class="toplist">
+      关注
+      <ins></ins>
+      <ul class="submenu">
+        <li class="sublist">苹果</li>
+        <li class="sublist">绿色</li></li>
+        <li class="sublist">红色</li>
+        <li class="sublist">青色</li>
+        <li class="sublist">粉红</li>
+      </ul>
+    </li>
+    <li class="toplist">
+      我的空间
+      <ins></ins>
+      <ul class="submenu">
+        <li class="sublist">苹果</li>
+        <li class="sublist">手机</li>
+        <li class="sublist">耳机</li>
+        <li class="sublist">电脑</li>
+        <li class="sublist">平板</li>
+      </ul>
+    </li>
+    <li class="toplist">
+      今日头条
+      <ins></ins>
+      <ul class="submenu">
+        <li class="sublist">苹果</li>
+        <li class="sublist">小米</li>
+        <li class="sublist">华为</li>
+        <li class="sublist">魅族</li>
+        <li class="sublist">三星</li>
+      </ul>
+    </li>
   </ul>
 </div>
 <script src="../lib/jquery-1.11.1.min.js"></script>
-<script src="../lib/bootstrap/js/bootstrap.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.js"></script>
 <script>
-  var otopLi=document.querySelectorAll('.toplist');
-  var osubmenu=document.querySelectorAll('.submenu');
-  var len=otopLi.length;
-//  alert(len);
-  for(let i=0;i<len;++i){
-    otopLi[i].addEventListener("mouseover",function(){
-      osubmenu[i].style.bottom='-31px';
-      osubmenu[i].style.left=(i)*(-80)+'px';
-    })
+  var oMenuLis=document.querySelectorAll(".toplist");
+  var len=oMenuLis.length;
+  for(let i=0;i<len;i++){
+    oMenuLis[i].onmouseover=function(){
+      var oUl=this.querySelectorAll("ul")[0];
+      var ins=this.querySelectorAll("ins")[0]
+      oUl.style.left=(-80*i)+'px';
+      oUl.style.display='block';
+      ins.style.display='block';
+    }
+    oMenuLis[i].onmouseout=function(){
+      var oUl=this.querySelectorAll("ul")[0];
+      var ins=this.querySelectorAll("ins")[0]
+      oUl.style.display='none';
+      ins.style.display='none';
+    }
   }
-</script>
+ 
+ </script>
 </body>
 </html>

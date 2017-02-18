@@ -83,7 +83,7 @@ video {
     border: 0;
     font-size: 100%;
     font: inherit;
-    vertical-align: baseline;
+    vertical-align: top;
 }
 
 
@@ -340,15 +340,6 @@ footer p>span {
     display: inline-block;
     padding: 5px;
 }
-
-
-/*主体内容部分*/
-
-main {
-    position: relative;
-    height: 1000px;
-}
-
 .nav-menu{
   width: 100%;
   position: relative;
@@ -381,7 +372,7 @@ main {
     background-color: #dcdcdc;
 }
 
-.nav-menu > li > a:hover {
+.nav-menu > li:hover>a{
     color: #0085d0;
     background-color: #f3f3f3;
 }
@@ -410,19 +401,19 @@ ins {
     border-bottom: 8px solid #fff;
     position: absolute;
 }
-.nav-menu > li:hover> ins{
-  display: block;
-}
+/*.nav-menu > li:hover> ins{*/
+  /*display: block;*/
+/*}*/
 
 .nav-submenu{
   width:1200px;
-  display: flex;
+  display: none;
   flex-flow:row nowrap;
   justify-content: space-between;
   position: absolute;
   background-color: #fff;
   box-shadow: 0 1px 1px #888;
-  visibility: hidden;
+  z-index: 1120;
 }
 .nav-submenu>li{
   width: 14%;
@@ -436,4 +427,182 @@ ins {
 }
 .nav-submenu>li>a:hover{
   color: #0085d0;
+}
+
+/*主体部分*/
+main{
+  position: relative;
+}
+/*主体区域1*/
+.sec_01{
+  display: inline-block;
+  margin: 5px 10px 0 0;
+}
+.shoplist{
+  width: 160px;
+  border: 1px solid #b8d9e9;
+  text-align:center;
+}
+.shoplist>p{
+ line-height:1.8em;
+  padding:4px 0;
+}
+.shoplist ul>li{
+  height: 64px;
+  line-height: 64px;
+  font-size:18px;
+  border-top: 1px solid #e9e9e9;
+  text-align:center;
+}
+.shoplist li a:hover {
+  color: #0085d0;
+  text-decoration: none;
+}
+/*轮播图*/
+.carousel-top{
+  display: inline-block;
+  position: relative;
+}
+.carousel-indicators li {
+  font: 12px/14px Verdana,Arial;
+  height: 15px;
+  width: 15px;
+  border: 0;
+}
+.carousel-indicators li.active{
+  background-color:#E40077;
+}
+.blprev,.blnext{
+  cursor:pointer;
+  display: block;
+  height: 70px;
+  position: absolute;
+  width: 30px;
+  opacity:0.3;
+  filter:alpha(opacity=30);
+}
+a.blprev{
+  background:url('../img/lbnextpre.png') no-repeat;
+  left:0;
+  top: 140px;
+ }
+a.blnext{
+  background:url('../img/lbnextpre.png') no-repeat right 0;
+  right:0;
+  top: 140px;
+}
+
+/*快速办理业务*/
+.quickbtn{
+  border:1px solid #dfdfdf;
+  width: 270px;
+  margin:5px 0 0;
+  padding:10px;
+  box-sizing:border-box;
+}
+.quickbtn-top{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-between;
+}
+.quickbtn-top>li{
+  width: 80px;
+  text-align:center;
+
+}
+.quickbtn-top>li>a{
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 15px 0 8px 18px;
+}
+.quickbtn-top>li>a:hover{
+  background-size:38px 38px;
+}
+.btn-item01{
+  background: url(../img/quickbtn01.gif) no-repeat;
+}
+.btn-item02{
+  background: url(../img/quickbtn02.gif) no-repeat;
+}
+.btn-item03{
+  background: url(../img/quickbtn03.png) no-repeat;
+}
+.btn-item04{
+  background: url(../img/quickbtn04.gif) no-repeat;
+}
+.btn-item05 {
+  background: url(../img/quickbtn05.gif) no-repeat;
+}
+.btn-item06{
+  background: url(../img/quickbtn06.gif) no-repeat;
+  position: relative;
+}
+.xtip{
+  position: absolute;
+  right:0;
+  top:-10px;
+  width: 20px;
+  height: 20px;
+  border-radius:10px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background: #e40077;
+}
+.quickbtn-bottom{
+  margin:20px 0 0;
+  padding: 10px 10px 0;
+}
+.quickbtn-bottom a{
+  display: inline-block;
+  text-align: center;
+}
+.czjf-text>a{
+  font-weight: bold;
+  color:#000;
+}
+.czjf-text>span{
+  font-weight: bold;
+  color: #ff0000;
+}
+.czjf-input>input{
+  display: block;
+  width: 100%;
+  margin:10px 0;
+  border-radius:5px;
+  height: 36px;
+  line-height: 36px;
+  color:#000;
+  border: 1px solid #dfdfdf;
+}
+.czjf-list{
+  margin:10px 0;
+  display: flex;
+  flex-flow:row nowrap;
+  justify-content:space-between;
+}
+.czjf-list>a{
+  width: 40px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #dfdfdf;
+  text-decoration: none;
+}
+.czjf-list>a:hover{
+  background:#e40077;
+  border: 1px solid #e40077;
+  color:#fff;
+  text-decoration: none;
+}
+.czjf-active{
+  background:#e40077;
+  border: 1px solid #e40077;
+  text-decoration: none;
+  color:#fff;
+}
+.czjf-btn{
+  text-align: center;
 }

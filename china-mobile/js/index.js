@@ -3,16 +3,21 @@
  */
 (function(){
 	var oMenuLi=document.querySelectorAll('.menu-list');
-	var oSubmenu=document.querySelectorAll(".nav-submenu");
 	var len=oMenuLi.length;
 	for(let i=1;i<len;i++){
 		oMenuLi[i].onmouseover=function(){
-			oSubmenu[i-1].style.visibility='visible';
-			oSubmenu[i-1].style.bottom='-40px';
-			oSubmenu[i-1].style.left=(-260)*(i-1)-161+"px";
+			var oUl=this.querySelectorAll("ul")[0];
+			var oIns=this.querySelectorAll("ins")[0];
+			oUl.style.left=(-260)*(i-1)-161+"px";
+			oUl.style.display='flex';
+			oIns.style.display='block';
 		}
-		oMenuLi[i].onmouseout=function(){
-			oSubmenu[i-1].style.visibility='hidden';
+		oMenuLi[i].onmouseleave=function(){
+			var oUl=this.querySelectorAll("ul")[0];
+			var oIns=this.querySelectorAll("ins")[0];
+			oUl.style.display='none';
+			oIns.style.display='none';
 		}
 	}
+
 })();
