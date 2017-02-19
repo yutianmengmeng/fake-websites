@@ -198,7 +198,9 @@ header {}
 .topbar ul li+li {
     /*border-left: 1px solid #ececec;*/
 }
-
+.topbar-right span.glyphicon{
+  top:7px;
+}
 .topbar ul li.login a {
     color: #e40077;
 }
@@ -605,4 +607,263 @@ a.blnext{
 }
 .czjf-btn{
   text-align: center;
+}
+/* 自定义轮播图区域 */
+
+  .yhcontainer{
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding: 10px 15px;
+    height: 182px;
+    background: #dfdfdf;
+    position: relative;
+    overflow: hidden;
+  }
+  #yhbox{
+    height: 160px;
+    position:absolute;
+    overflow: hidden;
+  }
+  #yhbox > .imgbox{
+    float: left;
+    margin:0 15px 0 0;
+    background: #fff;
+    width: 280px;
+    height: 162px;
+  }
+  .imgbox>a{
+    display: block;
+    position: relative;
+    text-decoration: none;
+  }
+  .imgbox>a.imgbox-img{
+    text-align: right;
+  }
+  .imgbox>a>h4{
+    color: rgb(51, 51, 51);
+    font: bold 18px/25px 微软雅黑;
+    padding: 6px 0px 0px 20px;
+    margin: 0px;
+  }
+  .imgbox>a>h5{
+    color: rgb(102, 102, 102);
+    font: 14px/20px 微软雅黑;
+    padding: 0px 0px 0px 20px;
+    margin: 0px
+  }
+  #lbprev{
+    display: inline-block;
+    position: absolute;
+    width: 28px;
+    height: 35px;
+    left: 0;
+    top: 70px;
+    background: url(../img/lbnextpre.gif) no-repeat;
+    opacity: 0.7;
+  }
+  #lbnext{
+    display: inline-block;
+    position: absolute;
+    width: 28px;
+    height: 35px;
+    right: 0;
+    top: 70px;
+    background: url(../img/lbnextpre.gif) no-repeat right 0;
+    opacity: 0.7;
+  }
+.panelsec{
+  margin:10px 0 0;
+}
+.panel{
+  margin:0;
+}
+.panel-default{
+  border-radius: 0;
+}
+.panel-default>.panel-heading{
+  height: 48px;
+  line-height: 48px;
+  padding: 0 25px;
+  background-color: #fff;
+}
+.paneltitle{
+    float: left;
+    color: #0085d0;
+    font-size: 15px;
+    font-weight: bold;
+}
+.panel-body{
+  margin:0;
+  padding:0;
+}
+.panel-body>.col-lg-3{
+  margin:0;
+  padding:0;
+  
+}
+.panel-body>.col-lg-3 + .col-lg-3{
+  border-left:1px solid #dfdfdf;
+}
+.panel-link{
+  float: right;
+}
+.panel-img-big{
+  height: 100%;
+  width: 25%
+}
+.panel-img-big>a{
+  display: block;
+}
+.panel-sub{
+  position: relative;
+  height:188px;
+}
+.panel-sub + .panel-sub{
+  border-top:1px solid #dfdfdf;
+}
+.panel-sub>h4{
+    font: bold 18px/25px "微软雅黑";
+    color: #333;
+    padding: 6px 0 0 20px;
+    margin: 0;
+}
+.panel-sub>h5{
+    font: normal 14px/20px "微软雅黑";
+    color: #666;
+    padding: 0 0 0 20px;
+    margin: 0
+}
+.panel-sub>a{
+  position: absolute;
+  right:0;
+  bottom:0;
+}
+.panel-sub>a:hover{
+  position: absolute;
+  right:10px;
+  bottom:0;
+}
+.color-ran{
+  background: #efefef
+}
+
+.color-ran>h4{
+   color: #E40077;
+}
+.panel-phone{
+  position: relative;
+}
+
+.panel-phone>h6{
+  color: rgb(102, 102, 102);
+  font: 14px/20px 微软雅黑;
+  padding: 10px 0px 0px 20px;
+  margin:0;
+}
+.panel-phone>h6.tags{
+  color: rgb(0, 133, 208);
+  font: 12px/20px 微软雅黑;
+}
+
+.panel-phone>p{
+    float: left;
+    color: rgb(239, 51, 162);
+    font: 20px/150% 微软雅黑;
+    padding: 10px 0px 0px 20px;
+}
+.panel-phone>span.phonetips{
+  color: #fff;
+  display:inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 22px 22px 0 22px;
+  background:pink;
+  transform:rotate(50deg);
+  margin:0 0 0 50px;
+  position: absolute;
+  right:22px;
+  top:10px;
+}
+span.phonetips>i{
+  display:inline-block;
+  width: 100%;
+  height: 100%;
+  line-height:34px;
+  font-weight: bold;
+  text-indent: .8em;
+  transform:rotate(-50deg);
+}
+
+.phone-img{
+ margin:50px 0 0;
+ position: relative;
+ height: 265px;
+}
+
+.phone-img>a{
+  display: block;
+  position: absolute;
+  right:0;
+  bottom:0;
+}
+/* 网站公告部分 */
+.notice{
+  width: 100%;
+  padding:0 20px;
+  height:38px;
+  overflow: hidden;
+  margin:10px 0 0;
+  font-size: 15px;
+  height: 38px;
+  line-height: 38px;
+  position: relative;
+}
+.notice>span{
+  z-index: 1120;
+}
+.notice-container{
+  display: inline;
+  overflow: hidden;
+  position: absolute;
+  height: 38px;
+}
+.notice-box{
+  display: inline-block;
+  width: 480px;
+}
+.notice-box>i{
+color: #CCC;
+    background: none;
+    padding: 0 0 0 5px;
+    width: 30%;
+}
+
+
+
+/* 友情链接部分 */
+.help-links{
+  margin:10px 0 0;
+}
+.helplink-box{
+  display: inline-block;
+  width: 235px;
+  padding:20px 0;
+  text-align: left;
+  text-indent: 2em;
+}
+
+.helplink-box>h5{
+  color: rgb(102, 102, 102);
+    height: 27px;
+    font: bold 15px/180% 微软雅黑;
+    margin: 0px
+}
+a.helplist{
+    display: block;
+    font-size: 15px;
+    line-height: 180%;
+    color:#666;
+}
+a.helplist:hover{
+  color: #007bc7;
 }

@@ -19,5 +19,39 @@
 			oIns.style.display='none';
 		}
 	}
+	function showcarousal(){
+      var oBox=document.querySelector("#yhbox");
+      var lbnext=document.querySelector("#lbnext");
+      var lbprev=document.querySelector("#lbprev");
 
+      var timer=setInterval(function(){
+          lunbo(1);
+      }, 2000);
+      function lunbo(flag){
+        var left=oBox.offsetLeft;
+        if(flag==1){
+          oBox.style.left=left-295+'px';
+          left<=-2050 ? oBox.style.left="15px":oBox.style.left=left-295+'px';
+        }else{
+          oBox.style.left=left+295+'px';
+          left>=-280? oBox.style.left="-2050px":oBox.style.left=left+295+"px";
+        }
+      }
+      lbnext.onclick=function(){
+            lunbo(1);
+      }
+      lbprev.onclick=function(){
+            lunbo(-1);
+      }
+  }
+  showcarousal();
+  
+  setInterval(function(){
+    shownotice();
+    }, 2000);
+  var oNotice_con=document.querySelector("#notice");
+  function shownotice(){
+    var left=oNotice_con.offsetLeft;
+      left<=-1820 ?oNotice_con.style.left="100px":oNotice_con.style.left=left-480+"px";
+      }
 })();
