@@ -3,14 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>观复嘟嘟</title>
-	 <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="style/common.css">
 </head>
 <body>
 	<header >
 		<div class="headleft fl clearfix"></div>
-		<div class="container fl clearfix">
-			<div class="slogan fl">
+		<div class="container clearfix">
+			<div class="slogan fl clearfix">
 				<a href="index.html">
 				 <img src="imgs/logo.png" height="35" width="168" alt="">
 				</a>
@@ -30,22 +29,30 @@
 			<div class="banner">
 				<ul class='banner-img'>
 					<li>
-					<img src="imgs/banner1.jpg" height="374" width="750" alt="">
+					<img src="imgs/banner1.jpg" height="377" width="814" alt="">
 					</li>
 					<li>
-					<img src="imgs/banner2.png" height="374" width="750" alt="">
+					<img src="imgs/banner2.png" height="377" width="814" alt="">
+					</li>
+					<li>
+					<img src="imgs/banner1.jpg" height="377" width="814" alt="">
+					</li>
+					<li>
+					<img src="imgs/banner2.png" height="377" width="814" alt="">
 					</li>
 				</ul>
-				<a href="" class="btn-prev">
+				<a href="javascript:;" class="btn-prev">
 					<img src="imgs/banner-btn_03.png" height="41" width="27" alt="">
 				</a>
-				<a href="" class="btn-next">
+				<a href="javascript:;" class="btn-next">
 					<img src="imgs/banner-btn_05.png" height="41" width="27" alt="">
 				</a>
-				<ul class='banner-icon'>
-					<li><i></i></li>
-					<li><i class='active'></i></li>
-				</ul>
+				<ol class='banner-icon'>
+					<li class='banner-btn active'></li>
+					<li class=" banner-btn"></li>
+					<li class='banner-btn'></li>
+					<li class=" banner-btn"></li>
+				</ol>
 			</div>
 			<div class="side-banner">
 				<div class="side-bannerup">
@@ -54,7 +61,66 @@
 				<div class="side-bannerdown">
 					<img src="imgs/sidebanner2.png" alt="">
 				</div>
-			</div>
+			</div>	
+			<section>
+				<ul id="Article-nav" class="clearfix">
+					<li class="active">推荐</li>
+					<li>处女翻译</li>
+					<li>春宫与秘戏</li>
+					<li>古董的故事</li>
+					<li>与历史沾边</li>
+				</ul>
+				<div id="articleSec">
+					<ul class="show">
+						<li>111</li>
+						<li>111</li>
+					</ul>
+					<ul>
+						<li>222</li>
+						<li>222</li>
+						<li>222</li>
+						<li>222</li>
+						<li>222</li>
+						<li>222</li>
+					</ul>
+					<ul >
+						<li>3333</li>
+						<li>3333</li>
+						<li>3333</li>
+						<li>3333</li>
+						<li>3333</li>
+						<li>3333</li>
+					</ul>
+					<ul >
+						<li>5555</li>
+						<li>5555</li>
+						<li>5555</li>
+						<li>5555</li>
+						<li>5555</li>
+					</ul>
+					<ul>
+						<li>6666</li>
+						<li>6666</li>
+						<li>6666</li>
+						<li>6666</li>
+					</ul>
+				</div>
+			</section>
+			<aside>
+				<p class='hot-article'><i></i>热门文章榜</p>
+				<ul class="asidelists">
+					<li class="clearfix">
+						<img src="imgs/aside1.jpg" alt="">
+						<h3>艺术五帝本纪之一：丰乳肥臀的法老阿赫那顿（上）</h3>
+						<span class='username'>观复虚极</span>
+					</li>
+					<li class="clearfix">
+							<img src="imgs/aside1.jpg" alt="">
+							<h3>艺术五帝本纪之一：丰乳肥臀的法老阿赫那顿（上）</h3>
+							<span class='username'>观复虚极</span>
+					</li>
+				</ul>
+			</aside>
 		</div>
 	</main>
 	<footer>
@@ -91,7 +157,6 @@
 		</div>
 		<h6>Copyright © 观复文化 版权所有 京ICP备16011847号-1</h6>
 	</footer>
-	 <script src="../lib/jquery-1.11.1.min.js"></script>
-    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="script/index.js"></script>
 </body>
 </html>
