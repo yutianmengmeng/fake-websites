@@ -127,6 +127,7 @@ span.mobile-app>i{
 	left:-32px;
 	top:40px;
 	padding:10px 5px;
+	z-index: 1112;
 }
 span.mobile-app>i>img{
 	position: absolute;
@@ -155,9 +156,13 @@ footer{
 	height: 20px;
 	line-height: 20px;
 }
+.ft-links>li>a{
+	color:#b7b7b7;
+}
 .ft-links >li+li{
 	border-left:2px solid #b7b7b7;
 }
+
 .ft-text{
 	font-size:12px;
 	line-height: 20px;

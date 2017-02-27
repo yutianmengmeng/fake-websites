@@ -1,0 +1,186 @@
+
+/*主体部分 */
+main{
+	margin:30px 0;
+	/* background-color: #f5f5f5; */
+	position: relative;
+}
+/* 主体区 */
+section{
+	display: inline-block;
+	width: 750px;
+	box-sizing:border-box;
+	margin-left:50px;
+}
+/*侧边栏 */
+aside{
+	display: inline-block;
+	vertical-align: top;
+	width: 337px;
+	box-sizing:border-box;
+	/* background-color: #f5f5f5; */
+}
+.authorDetail{
+	width: 100%;
+	/* height: 1000px; */
+	border:1px solid #e5e5e5;
+}
+
+.authorHead{
+	width: 100%;
+	/* text-align: center; */
+	margin:20px 0 0;
+}
+a.authorImg{
+	display: block;
+	width: 104px;
+	height: 104px;
+	margin-left:125px;
+	border-radius: 50%;
+	background:url(../imgs/author.png) no-repeat;
+	background-size:cover;
+}
+p.authorName{
+	font-size: 18px;
+    text-align: center;
+    padding: 15px 0 5px;
+    line-height: 18px;
+    height: 18px;
+}
+p.follow{
+	font-size: 14px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    color: #3d4356;
+    border-radius: 20px;
+    border: 1px solid #3d4356;
+    margin:15px auto 20px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.authorLinks{
+	box-sizing:border-box;
+	padding:20px;
+	margin:0 0 100px;
+}
+.authorLinks ul li{
+	box-sizing:border-box;
+	color: #3d4356;
+    padding: 0 30px 0 50px;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 50px;
+    position: relative;
+}
+.authorLinks i{
+	text-align: right;
+}
+li.authorArtLinks{
+	background: url("../imgs/myArticleIcon.png") no-repeat 10px 15px;
+	background-size: 20px 20px;
+
+}
+
+li.authorlikeLinks {
+	background: url("../imgs/favsIcon (1).png") no-repeat 10px 15px;
+	background-size: 20px 20px;
+
+}
+
+li.authorfans {
+	background: url("../imgs/fansIcon.png") no-repeat 10px 15px;
+	background-size: 20px 20px;
+
+}
+
+li.authorfollowing{
+	background: url("../imgs/followIcon.png") no-repeat 10px 15px;
+	background-size: 20px 20px;
+
+}
+/* 主体文章列表区域 */
+#articleSec>ul{
+	display: block;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #f3f3f3;
+	
+}
+#articleSec>ul>li{
+	height: 180px;
+	margin:0 0 40px;
+}
+#articleSec>ul.show{
+	display: block;
+}
+
+.artDetail{
+	margin-left:295px;
+	width:470px;
+	text-align: left;
+	position: relative;
+	height: 180px;
+	cursor:pointer;
+}
+
+.artDetail>h2{
+	font-size: 18px;
+	color: #434343;
+	padding-bottom: 12px;
+	font-weight: 400;
+	line-height: 24px;
+}
+.artDetail>p{
+	font-size: 16px;
+	color: #858585;
+	margin-bottom: 20px;
+	line-height: 22px;
+}
+.artTags{
+	position: absolute;
+	width: 470px;
+	height: 30px;
+	bottom:0;
+	left:0;
+}
+span.author{
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color:#4e4e4e;
+	vertical-align: top;
+}
+.tagList>span{
+	display: inline-block;
+	margin-right: 5px;
+	font-size: 14px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+	color: #aeaeae;
+	 cursor: pointer;
+}
+time{
+	display: inline-block;
+	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+	color: #aeaeae;
+	cursor: pointer;
+}
+span.hot{
+	background: url(../imgs/fire.png) no-repeat 0 5px;
+	background-size:15px  15px;
+}
+
+span.comment{
+	background: url(../imgs/comment.png) no-repeat 0 5px;
+	background-size:15px  15px;
+}
+span.likes{
+	background: url(../imgs/heart.png) no-repeat 0 5px;
+	background-size:15px  15px;
+}

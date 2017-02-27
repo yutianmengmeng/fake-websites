@@ -1,0 +1,214 @@
+/* 左侧导航条 */
+.navAside{
+	width: 260px;
+    height: 229px;
+    background: #fff;
+    float: left;
+    display: inline-block;
+    margin-top: 32px;
+}
+#navList{
+	width: 260px;
+    height: 227px;
+    border: 1px solid #F0F1F1;
+    overflow: hidden;
+}
+#navList li{
+	width: 260px;
+    height: 56px;
+    border-bottom: solid 1px #f0f1f1;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 16px;
+    line-height: 58px;
+    text-indent: 29px;
+    cursor: pointer;
+    position: relative;
+}
+#navList li.active{
+	background-color: #f7f7f7;
+}
+#navList li.active::before{
+	position: absolute;
+	left:0;
+	top:-1px;
+	display: block;
+	content:"";
+	height: 58px;
+	width: 4px;
+	background-color: #ae0003;
+}	
+#navContent{
+    width: 800px;
+    margin:32px 0 50px 30px;
+    /* border:1px solid #e5e5e5; */
+}
+#navContent>div{
+	display: none;
+    text-align:left;
+}
+#navContent div>h2{
+    font-size: 20px;
+    padding-bottom: 12px;
+    margin-bottom:12px;
+    margin-top: 0;
+    color: #333;
+    border-bottom:1px solid #e5e5e5;
+}
+#navContent div>h3{
+    font-size: 18px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+#navContent div>p{
+    font-size: 14px;
+    line-height: 26px;
+    color:#666;
+    margin:10px 0 20px;
+}
+#navContent div.show{
+    display: block;
+}
+#feedback p{
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+}
+#feedback p.fbTitle{
+    width: 774px;
+    height: 34px;
+   
+}
+p.fbTitle input{
+    border: 1px solid #F0F1F1;
+    border-radius: 8px;
+    width: 384px;
+    height: 34px;
+    text-indent: 15px;
+    color: #333;
+}
+p.fbText span{
+    vertical-align: top;
+}
+p.fbText textarea {
+    width: 364px;
+    height: 136px;
+    border: 1px solid #F0F1F1;
+    border-radius: 8px;
+    resize: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+p.submitFeedback input{
+    border:0;
+    width: 330px;
+    height: 45px;
+    background: #3D4356;
+    border-radius: 8px;
+    color: #fff;
+    font-size:18px;
+    text-align: center;
+    line-height: 45px;
+    margin-top: 16px;
+    margin-left: 106px;
+    margin-bottom: 32px;
+    cursor: pointer;
+}
+p.callHelp{
+    font-size:10px;
+    color:#666;
+    opacity: 0.8;
+    filter:alpha(opacity:80);
+
+}
+
+#jobs{
+    border:1px solid #e5e5e5;
+    
+}
+#jobCategory{
+    width: 800px;
+    height: 46px;
+    background: #eeefef;
+}
+#jobCategory>li{
+    float: left;
+    text-align: center;
+    display: inline-block;
+    width: 124px;
+    height: 46px;
+    font-size: 16px;
+    line-height: 46px;
+    color: #999;
+}
+#jobCategory>li.on{
+    border-top: 2px solid #bb0001;
+    height: 44px;
+    line-height: 41px;
+    color: #bb0001;
+    background: #fff;
+}
+#jobSub{
+    width: 774px;
+    height: 58px;
+    color: #333;
+}
+#jobSub ul{
+    width: 100%;
+    height: 58px;
+    border-bottom: #F0F1F1 solid 1px;
+    display: none;
+}
+#jobSub ul.on{
+    display: block;
+}
+
+#jobSub ul >li{
+   display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    height: 58px;
+    font-size: 14px;
+    color: #999;
+    line-height: 58px;
+    width: 124px;
+}
+#jobSub ul>li.on{
+    color:#333;
+}
+#jobDetail{
+    padding-left: 26px;
+    padding-bottom: 40px;
+}
+#jobDetail li{
+    display: none;
+}
+#jobDetail li.on{
+    display: block;
+}
+#jobDetail h5{
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    font-family: 微软雅黑;
+}
+#jobDetail div>p{
+  margin:0;
+  padding:0;
+  font-size: 14px;
+  line-height: 26px;
+}
+.jobDuty{
+    margin-top: 24px;
+    font-size: 14px;
+    line-height: 26px;
+}
+.jobRequest{
+    margin-top: 24px;
+    font-size: 14px;
+    line-height: 26px;
+}
