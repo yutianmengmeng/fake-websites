@@ -1,0 +1,106 @@
+main{
+	padding: 30px 0;
+    height: auto;
+    background-color: #e9eaec;
+}
+.register{
+	width: 100%;
+    height: 634px;
+    background: #fff;
+    border-radius: 10px;
+}
+.registerHead{
+	height: 34px;
+    width: 100%;
+    border-bottom: 1px #e0e0e0 solid;
+    padding-top: 26px;
+}
+.registerHead>p{
+	font-size: 20px;
+    font-weight: 700;
+    margin-left: 30px;
+    border-bottom: #BF221A solid 2px;
+    width: 200px;
+    padding-bottom: 8px;
+}
+.registerBody{
+	position: relative;
+	margin:120px auto 50px;
+    width: 500px;
+}
+.rigUser{
+	width: 334px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    height: 46px;
+}
+.rigPass{
+	display: inline-block;
+	width: 235px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    height: 46px;
+    margin:30px 0 20px;
+}
+.rigUser img,.rigPass img{
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.rigUser input,.rigPass input{
+	outline: 0;
+    height: 44px;
+    font-size: 14px;
+    color: #3d4356;
+    border: none;
+}
+.rigPass input{
+	width: 160px;
+}
+.randomPass{
+	display: inline-block;
+	width: 200px;
+	vertical-align: top;
+	text-align: left;
+	box-sizing:border-box;
+}
+img.checkImg{
+    width: 76px;
+    line-height: 40px;
+    font-size: 20px;
+    margin:30px 10px 0 20px;
+    height: 44px;
+}
+#randomCode{
+    color: #0098ff;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    margin:45px 0 0;
+}
+p.rigNext{
+	width: 334px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+}
+p.rigNext>input{
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	font-size: 16px;
+    border:0;
+    border-radius: 8px;
+    background: #3D4356;
+    cursor: pointer;
+}
+p.goLogin{
+	width: 130px;
+    margin-top: 16px;
+    font-size: 12px;
+    color: #3d4356;
+}
+
+p.goLogin >a{
+	color: #0098FF;
+}

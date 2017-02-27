@@ -27,9 +27,7 @@ a{
 	text-decoration: none;
 	color:#000;
 }
-body {
-	line-height: 1;
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -201,4 +199,132 @@ footer{
 
 footer>h6{
 	font-size: 10px;
+}
+#loginAll{
+	display: none;
+}
+.mask{
+	position:fixed;
+	width: 100%;
+	height: 100%;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-color: #333;
+	opacity: 0.8;
+	z-index: 1115;
+}
+
+.loginCon{
+	width: 570px;
+    height: 392px;
+    position: fixed;
+    left: 43%;
+    top: 140px;
+    margin-left: -175px;
+    z-index: 1116;
+    box-shadow: rgb(56, 56, 56) 0px 0px 80px;
+    font-family: 微软雅黑;
+    background: rgb(255, 255, 255);
+    /* border:1px solid #333; */
+    border-radius: 10px;
+}
+.loginTop{
+	width: 100%;
+    height: 52px;
+    background: #3D4356;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+.loginTop>span{
+	position: absolute;
+	right:10px;
+	top:10px;
+	display:block;
+	font-size: 24px;
+	font-weight: bold;
+	color:#fff;
+	cursor: pointer;
+}
+.loginBody{
+	/* text-align:center; */
+	margin:0 auto;
+}
+.userID,.userPass{
+	height: 46px;
+    width: 340px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    margin-left: 115px;
+}
+.userID{
+	margin-top: 45px;
+}
+.userID img,.userPass img{
+	margin-left: 12px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.userID input,.userPass input{
+	border: 0;
+    height: 44px;
+    width: 260px;
+    line-height: 44px;
+    outline: 0;
+    font-size: 14px;
+}
+.userPass{
+	margin-top: 20px
+}
+p.autoLogin{
+	overflow: hidden;
+    width: 340px;
+    height: 22px;
+    margin:23px 0 10px 121px;
+     font-size: 14px;
+}
+p.autoLogin>input{
+    color: #3D4356;
+   
+    float: left;
+    line-height: 14px;
+}
+p.autoLogin>a{
+	display: block;
+    font-size: 14px;
+    color: #0098FF;
+    line-height: 16px;
+}
+p.loginSubmit{
+	margin:0 auto;
+	text-align: center;
+}
+
+p.loginSubmit>input{
+	width: 340px;
+    height: 46px;
+    background: #3D4356;
+    line-height: 46px;
+    font-size: 16px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border:0;
+    color:#fff;
+    cursor: pointer;
+}
+p.goRigster{
+	width: 340px;
+    height: auto;
+    margin-left: 111px;
+    margin-top: 7px;
+    font-size: 14px;
+    text-align: center;
+}
+
+p.goRigster a{
+	    color: #0098FF;
+    text-decoration: none;
+    font-size: 14px;
 }

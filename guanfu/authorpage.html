@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -24,8 +23,8 @@
             </ul>
             <div class="login fr">
                 <span class='mobile-app'>客户端<i><img src="./imgs/download.png" height="140" width="140" alt=""></i></span>
-                <span>登录</span>
-                <span>注册</span>
+                <span id="Signin">登录</span>
+                <span id='register'><a href="register.html">注册</a></span>
             </div>
         </div>
     </header>
@@ -203,6 +202,36 @@
         </div>
         <h6>Copyright © 观复文化 版权所有 京ICP备16011847号-1</h6>
     </footer>
+     <div id="loginAll"> 
+        <div class="mask">
+        </div>
+        <div class="loginCon">
+            <div class="loginTop">
+                <span class="close-btn">×</span>
+            </div>
+            <div class="loginBody">
+                <div class="userID">
+                    <img src="imgs/user.png" height="20" width="20" alt="">
+                    <input type="text" placeholder="请输入用户名/邮箱/手机号">
+                </div>
+                <div class='userPass'>
+                    <img src="imgs/password.png" height="20" width="20" alt="">
+                    <input type="passwore" placeholder="请输入密码">
+                </div>
+                <p class="autoLogin clearfix">
+                    <input type="checkbox">自动登录
+                <a href="#zhaohui.html" class="fr">忘记密码?</a></p>
+                
+                <p class="loginSubmit"><input type="submit" value="登录"></p>
+                <p class="goRigster">
+                    没有账号
+                    <a href="#register.html">免费注册</a>
+                </p>
+            </div>     
+
+        </div>
+    </div>
+    <script src="script/common.js"></script>
 </body>
 
 </html>
